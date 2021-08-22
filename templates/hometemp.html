@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MusicDB</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div class="p-5 mb-0 bg-info text-dark">
+<center><div style="width:550px;height:70px;border:10px solid #0000FF;"><h1>𝄞 𝄞 𝄞 THE MUSIC DB 𝄞 𝄞 𝄞</h1></div></center>
+</div>
+<div class="p-5 mb-2 bg-success text-dark">
+  <center><h1>Search</h1></center>
+<form action="/searchname" method="POST">
+  <div class="input-group mb-3">
+  <h2>Artist Details and Discography ---->></h2>
+  <input type="text" class="form-control" placeholder="Artist Name" Name="Name">
+  <button class="btn btn-primary" type="submit">SEARCH</button>
+  </div>
+</form>
+<form action="/artistdata" method="POST">
+  <div class="input-group mb-3">
+  <h2>Artist Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---->></h2>
+  <input type="text" class="form-control" placeholder="Enter the Artist ID" Name="Name">
+  <button class="btn btn-primary" type="submit">ARTIST DATA</button>
+  </div>
+</form>
+<center><h3>Album Data</h3></center>
+<div class="container mt-5">
+</div>
+<form action="/albumarid" method="POST">
+  <div class="input-group mb-3">
+  <h2>Artist ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---->></h2>
+  <input type="text" class="form-control" placeholder="Enter the Artist ID" Name="Name">
+  <button class="btn btn-primary" type="submit">ALBUM DATA</button>
+  </div>
+</form>
+<form action="/albumarid" method="POST">
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="111239" value="111239"></button>	
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="114641" value="114641"></button>
+</div>
+</form>
+<div class="container mt-5">
+</div>
+<form action="/albumalid" method="POST">
+  <div class="input-group mb-3">
+  <h2>Album ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---->></h2>
+  <input type="text" class="form-control" placeholder="Enter the Album ID" Name="Name">
+  <button class="btn btn-primary" type="submit">ALBUM DATA</button>
+  </div>
+</form>
+<form action="/albumalid" method="POST">
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109614" value="2109614"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109615" value="2109615"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109616" value="2109616"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109617" value="2109617"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109618" value="2109618"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2114546" value="2114546"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143695" value="2143695"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143696" value="2143696"></button>
+</div>
+<div class="container mt-2">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143698" value="2143698"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143699" value="2143699"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143700" value="2143700"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2198792" value="2198792"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2205903" value="2205903"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2241771" value="2241771"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2247757" value="2247757"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270458" value="2270458"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270459" value="2270459"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270460" value="2270460"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270461" value="2270461"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270462" value="2270462"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2277598" value="2277598"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2277603" value="2277603"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2279758" value="2279758"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2279759" value="2279759"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2282194" value="2282194"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2303131" value="2303131"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2303132" value="2303132"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2310611" value="2310611"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2310893" value="2310893"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316092" value="2316092"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316222" value="2316222"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316223" value="2316223"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316224" value="2316224"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316225" value="2316225"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316226" value="2316226"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316227" value="2316227"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316365" value="2316365"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316366" value="2316366"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316397" value="2316397"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316398" value="2316398"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316441" value="2316441"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316573" value="2316573"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316584" value="2316584"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316585" value="2316585"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316601" value="2316601"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316623" value="2316623"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2332192" value="2332192"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2358960" value="2358960"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2365368" value="2365368"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2132466" value="2132466"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2132467" value="2132467"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2132469" value="2132469"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2147131" value="2147131"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2147132" value="2147132"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2193143" value="2193143"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2327989" value="2327989"></button>
+</div>
+</form>
+<div class="container mt-5">
+</div>
+<center><h2>Track Data</h2></center>
+<div class="container mt-5">
+</div>
+<form action="/trackalid" method="POST">
+  <div class="input-group mb-3">
+  <h2>Album ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---->></h2>
+  <input type="text" class="form-control" placeholder="Enter the Album ID" Name="Name">
+  <button class="btn btn-primary" type="submit">TRACK DATA</button>
+  </div>
+</form>
+<form action="/trackalid" method="POST">
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109614" value="2109614"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109615" value="2109615"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109616" value="2109616"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109617" value="2109617"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2109618" value="2109618"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2114546" value="2114546"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143695" value="2143695"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143696" value="2143696"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143698" value="2143698"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143699" value="2143699"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2143700" value="2143700"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2198792" value="2198792"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2205903" value="2205903"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2241771" value="2241771"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2247757" value="2247757"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270458" value="2270458"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270459" value="2270459"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270460" value="2270460"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270461" value="2270461"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2270462" value="2270462"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2277598" value="2277598"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2277603" value="2277603"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2279758" value="2279758"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2279759" value="2279759"></button>
+</div>
+
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2282194" value="2282194"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2303131" value="2303131"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2303132" value="2303132"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2310611" value="2310611"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2310893" value="2310893"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316092" value="2316092"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316222" value="2316222"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316223" value="2316223"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316224" value="2316224"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316225" value="2316225"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316226" value="2316226"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316227" value="2316227"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316365" value="2316365"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316366" value="2316366"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316397" value="2316397"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316398" value="2316398"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316441" value="2316441"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316573" value="2316573"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316584" value="2316584"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316585" value="2316585"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316601" value="2316601"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2316623" value="2316623"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2332192" value="2332192"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2358960" value="2358960"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2365368" value="2365368"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2132466" value="2132466"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2132467" value="2132467"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2132469" value="2132469"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2147131" value="2147131"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2147132" value="2147132"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2193143" value="2193143"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="2327989" value="2327989"></button>
+</div>
+</form>
+<div class="container mt-5">
+</div>
+<form action="/tracktid" method="POST">
+  <div class="input-group mb-3">
+  <h2>Track ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---->></h2>
+  <input type="text" class="form-control" placeholder="Enter the Track ID" Name="Name">
+  <button class="btn btn-primary" type="submit">TRACK DATA</button>
+  </div>
+</form>
+<form action="/tracktid" method="POST">
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182209" value="33182209"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182210" value="33182210"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182211" value="33182211"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182212" value="33182212"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182213" value="33182213"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182214" value="33182214"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182215" value="33182215"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182216" value="33182216"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182217" value="33182217"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182218" value="33182218"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182219" value="33182219"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182220" value="33182220"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="33182221" value="33182221"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724180" value="32724180"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724181" value="32724181"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724182" value="32724182"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724183" value="32724183"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724184" value="32724184"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724185" value="32724185"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724186" value="32724186"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724187" value="32724187"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724188" value="32724188"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724189" value="32724189"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724190" value="32724190"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724191" value="32724191"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724192" value="32724192"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724193" value="32724193"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724194" value="32724194"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724195" value="32724195"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724196" value="32724196"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724197" value="32724197"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724198" value="32724198"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724199" value="32724199"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724200" value="32724200"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724201" value="32724201"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724202" value="32724202"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724203" value="32724203"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724204" value="32724204"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724205" value="32724205"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724206" value="32724206"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724207" value="32724207"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724208" value="32724208"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724209" value="32724209"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724210" value="32724210"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724211" value="32724211"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724212" value="32724212"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724213" value="32724213"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724214" value="32724214"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724215" value="32724215"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724216" value="32724216"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724217" value="32724217"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724218" value="32724218"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724219" value="32724219"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724220" value="32724220"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724221" value="32724221"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724222" value="32724222"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724223" value="32724223"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724224" value="32724224"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724225" value="32724225"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724226" value="32724226"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32724227" value="32724227"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776955" value="32776955"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776956" value="32776956"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776957" value="32776957"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776958" value="32776958"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776959" value="32776959"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776960" value="32776960"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776961" value="32776961"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776962" value="32776962"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776963" value="32776963"></button>
+</div>
+<div class="container mt-1">
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776964" value="32776964"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776965" value="32776965"></button>
+<button class="btn btn-primary btn-lg"><input type="submit" Name='Name' Name="32776966" value="32776966"></button>
+</div>
+</form>
+
+
+<center><h2>Music Data</h2></center>
+<div class="container mt-5">
+</div>
+<form action="/musicalid" method="POST">
+  <div class="input-group mb-3">
+  <h2>Album ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---->></h2>
+  <input type="text" class="form-control" placeholder="Enter the Album ID" Name="Name">
+  <button class="btn btn-primary" type="submit">MUSIC DATA</button>
+  </div>
+</form>
+<div class="container mt-5">
+
+<a href=" https://www.youtube.com/watch?v=gnIZ7RMuLpU "><button class="btn btn-secondary btn-lg"> In My Place </button></a>
+<a href=" https://www.youtube.com/watch?v=qhIVgSoJVRc "><button class="btn btn-secondary btn-lg"> God Put a Smile Upon Your Face </button></a>
+<a href=" https://www.youtube.com/watch?v=RB-RcX5DS5A "><button class="btn btn-secondary btn-lg"> The Scientist </button></a>
+<a href=" https://www.youtube.com/watch?v=d020hcWA_Wg "><button class="btn btn-secondary btn-lg"> Clocks </button></a>
+<a href=" https://www.youtube.com/watch?v=yWeuUwpEQfs "><button class="btn btn-secondary btn-lg"> Don't Panic </button></a>
+<a href=" http://www.youtube.com/watch?v=u8XFFTWwSvY "><button class="btn btn-secondary btn-lg"> Shiver </button></a>
+<a href=" https://www.youtube.com/watch?v=yKNxeF4KMsY "><button class="btn btn-secondary btn-lg"> Yellow </button></a>
+<a href=" http://www.youtube.com/watch?v=kHg-PhseKOQ "><button class="btn btn-secondary btn-lg"> Trouble </button></a>
+<a href=" https://www.youtube.com/watch?v=qN8WQOHsNx4 "><button class="btn btn-secondary btn-lg"> Everything's Not Lost </button></a> 
+<a href=" https://www.youtube.com/watch?v=C8KV0mzqTXY "><button class="btn btn-secondary btn-lg"> Hurts Like Heaven </button></a>     
+<a href=" http://www.youtube.com/watch?v=1G4isv_Fylg "><button class="btn btn-secondary btn-lg"> Paradise </button></a>
+<a href=" http://www.youtube.com/watch?v=zTFBJgnNgU4 "><button class="btn btn-secondary btn-lg"> Charlie Brown </button></a>
+<a href=" http://www.youtube.com/watch?v=fyMhvkC3A84 "><button class="btn btn-secondary btn-lg"> Every Teardrop Is a Waterfall </button></a>
+<a href=" http://www.youtube.com/watch?v=1Uw6ZkbsAH8 "><button class="btn btn-secondary btn-lg"> Princess of China </button></a>      
+<a href=" https://www.youtube.com/watch?v=Pkgeai985rA "><button class="btn btn-secondary btn-lg"> Lost! </button></a>
+<a href=" https://www.youtube.com/watch?v=OTFFQkdhw6Q "><button class="btn btn-secondary btn-lg"> Lovers in Japan / Reign of Love </button></a>
+<a href=" http://www.youtube.com/watch?v=dvgZkm1xWPE "><button class="btn btn-secondary btn-lg"> Viva la Vida </button></a>
+<a href=" http://www.youtube.com/watch?v=IakDItZ7f7Q "><button class="btn btn-secondary btn-lg"> Violet Hill </button></a>
+<a href=" https://www.youtube.com/watch?v=h3pJZSTQqIg "><button class="btn btn-secondary btn-lg"> Strawberry Swing </button></a>      
+<a href=" https://www.youtube.com/watch?v=k4V3Mo61fJM "><button class="btn btn-secondary btn-lg"> Fix You </button></a>
+<a href=" http://www.youtube.com/watch?v=W0uqLM1uj_k "><button class="btn btn-secondary btn-lg"> Talk </button></a>
+<a href=" http://www.youtube.com/watch?v=TahH7B_aUZc "><button class="btn btn-secondary btn-lg"> Speed of Sound </button></a>
+<a href=" https://www.youtube.com/watch?v=WAGbq3A9HfA "><button class="btn btn-secondary btn-lg"> The Hardest Part </button></a>      
+<a href=" https://www.youtube.com/watch?v=MTbBdfX1moY "><button class="btn btn-secondary btn-lg"> Swallowed in the Sea </button></a>  
+<a href=" https://www.youtube.com/watch?v=fXSovfzyx28 "><button class="btn btn-secondary btn-lg"> Life in Technicolor ii </button></a>
+<a href=" https://www.youtube.com/watch?v=h3pJZSTQqIg "><button class="btn btn-secondary btn-lg"> Strawberry Swing </button></a>      
+<a href=" https://www.youtube.com/watch?v=kWh7Nr9Cxlc "><button class="btn btn-secondary btn-lg"> Always in My Head </button></a>     
+<a href=" http://www.youtube.com/watch?v=Qtb11P1FWnc "><button class="btn btn-secondary btn-lg"> Magic </button></a>
+<a href=" https://www.youtube.com/watch?v=nLhcmwvI1Dg "><button class="btn btn-secondary btn-lg"> Ink </button></a>
+<a href=" https://www.youtube.com/watch?v=Wpl_6jotaHA "><button class="btn btn-secondary btn-lg"> True Love </button></a>
+<a href=" https://www.youtube.com/watch?v=BQeMxWjpr-Y "><button class="btn btn-secondary btn-lg"> Midnight </button></a>
+<a href=" https://www.youtube.com/watch?v=VPRjCeoBqrI "><button class="btn btn-secondary btn-lg"> A Sky Full of Stars </button></a>   
+<a href=" https://www.youtube.com/watch?v=OTFFQkdhw6Q "><button class="btn btn-secondary btn-lg"> Lovers in Japan </button></a>       
+<a href=" https://www.youtube.com/watch?v=vGZMvV9KBp8 "><button class="btn btn-secondary btn-lg"> A Head Full of Dreams </button></a> 
+<a href=" https://www.youtube.com/watch?v=YykjpeuMNEk "><button class="btn btn-secondary btn-lg"> Hymn for the Weekend </button></a>  
+<a href=" https://www.youtube.com/watch?v=QtXby3twMmI "><button class="btn btn-secondary btn-lg"> Adventure of a Lifetime </button></a>
+<a href=" https://www.youtube.com/watch?v=BPNTC7uZYrI "><button class="btn btn-secondary btn-lg"> Up&Up </button></a>
+<a href=" https://www.youtube.com/watch?v=kHg-PhseKOQ "><button class="btn btn-secondary btn-lg"> Trouble </button></a>
+<a href=" https://www.youtube.com/watch?v=yKNxeF4KMsY "><button class="btn btn-secondary btn-lg"> Yellow </button></a>
+<a href=" https://www.youtube.com/watch?v=LpwW4iraV3Q "><button class="btn btn-secondary btn-lg"> Shiver </button></a>
+<a href=" https://www.youtube.com/watch?v=qhIVgSoJVRc "><button class="btn btn-secondary btn-lg"> God Put a Smile Upon Your Face </button></a>
+<a href=" http://www.youtube.com/watch?v=JI-o25K6B-E "><button class="btn btn-secondary btn-lg"> Fix You (edit) </button></a>
+<a href=" https://www.youtube.com/watch?v=1Tp0r9197uo "><button class="btn btn-secondary btn-lg"> The Hardest Part </button></a>      
+<a href=" https://www.youtube.com/watch?v=aKlwJROuo-Q "><button class="btn btn-secondary btn-lg"> Trouble In Town </button></a>
+
+</div>
+
+</div>
+</body>
+
+</html>

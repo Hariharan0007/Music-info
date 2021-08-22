@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MusicDB</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+<div class="container"> 
+
+{% for k in data %}
+<table class="table table-info table-striped">
+<div class="container mt-5">
+<center><h1>{{k. strAlbum }}</h1></center>
+</div>
+
+{% if k. idAlbum !=None %}<tr><th> Album ID </th><td>{{k. idAlbum }}</td></tr>{% endif %}
+{% if k. idArtist !=None %}<tr><th> Artist ID </th><td>{{k. idArtist }}</td></tr>{% endif %}
+{% if k. idLabel !=None %}<tr><th> Label ID </th><td>{{k. idLabel }}</td></tr>{% endif %}
+{% if k. strAlbum !=None %}<tr><th> Album Name </th><td>{{k. strAlbum }}</td></tr>{% endif %}
+{% if k. strArtist !=None %}<tr><th> Artist </th><td>{{k. strArtist }}</td></tr>{% endif %}
+{% if k. intYearReleased !=None %}<tr><th> Year Released </th><td>{{k. intYearReleased }}</td></tr>{% endif %}
+{% if k. strStyle !=None %}<tr><th> Style </th><td>{{k. strStyle }}</td></tr>{% endif %}
+{% if k. strGenre !=None %}<tr><th> Genre </th><td>{{k. strGenre }}</td></tr>{% endif %}
+{% if k. strLabel !=None %}<tr><th> Label </th><td>{{k. strLabel }}</td></tr>{% endif %}
+{% if k. strReleaseFormat !=None %}<tr><th> ReleaseFormat </th><td>{{k. strReleaseFormat }}</td></tr>{% endif %}
+{% if k. intSales !=None %}<tr><th> Sales </th><td>{{k. intSales }}</td></tr>{% endif %}
+{% if k. strAlbumThumb !=None %}<tr><th> AlbumThumb </th><td><center><img src="{{k. strAlbumThumb }}/preview"></center></td></tr>{% endif %}
+{% if k. strAlbumThumbBack !=None %}<tr><th> AlbumThumbBack </th><td><center><img src="{{k. strAlbumThumbBack }}/preview"></center></td></tr>{% endif %}
+{% if k. strDescriptionEN !=None %}<tr><th> Description </th><td>{{k. strDescriptionEN }}</td></tr>{% endif %}
+{% if k. intLoved !=None %}<tr><th> Loved </th><td>{{k. intLoved }}</td></tr>{% endif %}
+{% if k. intScore !=None %}<tr><th> Score </th><td>{{k. intScore }}</td></tr>{% endif %}
+{% if k. intScoreVotes !=None %}<tr><th> Score Votes </th><td>{{k. intScoreVotes }}</td></tr>{% endif %}
+{% if k. strReview !=None %}<tr><th> Review </th><td>{{k. strReview }}</td></tr>{% endif %}
+{% if k. strMood !=None %}<tr><th> Mood </th><td>{{k. strMood }}</td></tr>{% endif %}
+{% if k. strTheme !=None %}<tr><th> Theme </th><td>{{k. strTheme }}</td></tr>{% endif %}
+{% if k. strSpeed !=None %}<tr><th> Speed </th><td>{{k. strSpeed }}</td></tr>{% endif %}
+{% endfor %} 
+
+</table>
+</div>
+
+</body>
+</html>

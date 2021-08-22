@@ -1,0 +1,14 @@
+.container {
+    /* Content is centered horizontally */
+    align-items: center;
+    display: flex;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+}
+
+.container__item--right {
+    /* Sticks to the right */
+    margin-left: auto;
+}

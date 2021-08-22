@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<style>
+div {background-color: powderblue;}
+body   {color: blue;}
+p    {color: red;}
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>MusicDB</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+<div class="container mt-5">
+<div class="p-2 mb-3 bg-success text-white">
+{% for k in name %}
+<center><img src="{{k. strArtistLogo }}"></center>
+{% endfor %}
+</div>
+</div>
+<div class="container">
+<table class="table"> 
+{% for k in name %}
+{% if k. idArtist !=None %}<tr><th> Artist ID </th><td>{{k. idArtist }}</td></tr>{% endif %}
+{% if k. strArtist !=None %}<tr><th> Artist Name </th><td>{{k. strArtist }}</td></tr>{% endif %}
+{% if k. strArtistStripped !=None %}<tr><th> ArtistStripped </th><td>{{k. strArtistStripped }}</td></tr>{% endif %}
+{% if k. strLabel !=None %}<tr><th> Label </th><td>{{k. strLabel }}</td></tr>{% endif %}
+{% if k. idLabel !=None %}<tr><th> Label ID</th><td>{{k. idLabel }}</td></tr>{% endif %}
+{% if k. intFormedYear !=None %}<tr><th> FormedYear </th><td>{{k. intFormedYear }}</td></tr>{% endif %}
+{% if k. intBornYear !=None %}<tr><th> BornYear </th><td>{{k. intBornYear }}</td></tr>{% endif %}
+{% if k. intDiedYear !=None %}<tr><th> DiedYear </th><td>{{k. intDiedYear }}</td></tr>{% endif %}
+{% if k. strDisbanded !=None %}<tr><th> Disbanded </th><td>{{k. strDisbanded }}</td></tr>{% endif %}
+{% if k. strStyle !=None %}<tr><th> Style </th><td>{{k. strStyle }}</td></tr>{% endif %}
+{% if k. strGenre !=None %}<tr><th> Genre </th><td>{{k. strGenre }}</td></tr>{% endif %}
+{% if k. strMood !=None %}<tr><th> Mood </th><td>{{k. strMood }}</td></tr>{% endif %}
+{% if k. strWebsite !=None %}<tr><th> Website </th><td><a href="https://{{k. strWebsite }}">{{k. strWebsite }}</td></tr>{% endif %}
+{% if k. strFacebook !=None %}<tr><th> Facebook </th><td><a href="https://{{k. strFacebook }}">{{k. strFacebook }}</td></tr>{% endif %}
+{% if k. strTwitter !=None %}<tr><th> Twitter </th><td><a href="https://{{k. strTwitter }}">{{k. strTwitter }}</td></tr>{% endif %}
+{% if k. strBiographyEN !=None %}<tr><th> BiographyEN </th><td>{{k. strBiographyEN }}</td></tr>{% endif %}       
+{% if k. strGender !=None %}<tr><th> Gender </th><td>{{k. strGender }}</td></tr>{% endif %}
+{% if k. intMembers !=None %}<tr><th> Members </th><td>{{k. intMembers }}</td></tr>{% endif %}
+{% if k. strCountry !=None %}<tr><th> Country </th><td>{{k. strCountry }}</td></tr>{% endif %}
+{% if k. strCountryCode !=None %}<tr><th> CountryCode </th><td>{{k. strCountryCode }}</td></tr>{% endif %}
+{% if k. strArtistThumb !=None %}<tr><th> ArtistThumb </th><td><img src="{{k. strArtistThumb }}/preview"></td></tr>{% endif %}        
+{% if k. strLastFMChart !=None %}<tr><th> LastFMChart </th><td><a href="{{k. strLastFMChart }}">"{{ k.strLastFMChart}}"</a></td></tr></td></tr>{% endif %}        
+{% endfor %}
+</div>
+
+
+
+<table class="table table-primary table-striped">
+<div class="container mt-5">
+<div class="p-2 mb-3 bg-dark text-danger">
+<center><h1><var>Discography</var></h1></center>
+</div>
+  <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Album Name</th>
+      <th scope="col">Year Released</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for k in disco %}
+    <tr>
+      <th scope="row">{{loop.index}}</th>
+      <td>{{k.strAlbum}}</td>
+      <td>{{k.intYearReleased}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+
+</table>
+</body>
+
+</html>
+
